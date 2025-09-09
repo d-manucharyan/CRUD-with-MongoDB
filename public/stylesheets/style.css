@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+form input,
+form select,
+form button {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: decimal;
+  padding: 10px 0;
+}
+
+ul li {
+  display: flex;
+  width: 600px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.2s ease;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+}
+
+ul li a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+ul li button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+  margin-right: 50px;
+}
+
+ul li button:hover {
+  background: #c0392b;
+}

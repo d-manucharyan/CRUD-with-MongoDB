@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Users</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Welcome</h1>
+
+  <form action="/register" method="post">
+    <input type="text" name="firstname" placeholder="firstname" required>
+    <input type="text" name="lastname" placeholder="lastname" required>
+    <input type="number" name="age" placeholder="age" required>
+    <input type="email" name="email" placeholder="email" required>
+    <input type="text" name="address" placeholder="address" required>
+    <button>Sign in</button>
+  </form>
+
+  <p>There are <%=users.length%> users</p>
+
+  <form action="/" method="get">
+    <input type="text" name="name">
+    <select name="sort">
+      <option value="">unsorted</option>
+      <option value="minage">Min to Max</option>
+      <option value="maxage">Max to Min</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+
+  <ul>
+    <%users.forEach(user=> { %>
+      <li style="padding: 15px 0;">
+        <a href="/user/<%=user._id %>">
+          <%=user.firstname%>
+            <%=user.lastname %>
+        </a>
+        <button data-id="<%=user._id%>">Remove</button>
+      </li>
+      <% }) %>
+  </ul>
+
+  <script src="/javascripts/index.js"></script>
+</body>
+
+</html>

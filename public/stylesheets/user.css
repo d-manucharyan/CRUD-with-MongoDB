@@ -1,0 +1,77 @@
+body {
+    background:radial-gradient(rgb(149, 197, 245), rgb(63, 87, 122));
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 40px;
+}
+
+.user-info {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.user-info li {
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.edit-form {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 400px;
+}
+
+.edit-form .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-form .field label {
+    width: 90px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.edit-form .field input {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.edit-form .field input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.edit-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-form button:hover {
+    background-color: #0056b3;
+}
