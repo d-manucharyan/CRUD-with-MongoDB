@@ -48,6 +48,13 @@ router.patch('/user/:id', async (req, res) => {
   const { id } = req.params
   const updates = req.body
   if (updates.age) updates.age = Number(updates.age)
+
+  for (let key in updates) {
+    if (updates[key] === "") {
+      delete updates[key]
+    }
+  }
+
   await db.collection('users').updateOne(
     { _id: new ObjectId(id) },
     { $set: updates }
